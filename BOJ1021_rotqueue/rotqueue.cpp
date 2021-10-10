@@ -36,6 +36,7 @@ void solve()
         int findtar = findidx(dq, q.front());
         while (dq.front() != q.front())
         {
+            // 목표가 front에 더 가까운 경우
             if (findtar <= dq.size() / 2)
             {
                 dq.push_back(dq.front());
